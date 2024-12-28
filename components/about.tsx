@@ -27,7 +27,7 @@ export default function About() {
           <div className="flex flex-col justify-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
             <p className="text-muted-foreground md:text-lg">
-              I'm a passionate Full Stack Developer with a keen interest in AI and machine learning. My journey in tech has led me to work on diverse projects, from web applications to AI-powered solutions.
+              I&apos;m a passionate Full Stack Developer with a keen interest in AI and machine learning. My journey in tech has led me to work on diverse projects, from web applications to AI-powered solutions.
             </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

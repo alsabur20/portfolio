@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     github: 'https://github.com/username/collabrix',
     demo: 'https://collabrix.example.com',
-    image: '/placeholder.svg?height=400&width=600',
+    image: 'https://placeholder.pics/svg/300/DEDEDE/555555/Image%20here',
   },
   {
     title: 'Vocal Eyes AI',
@@ -22,7 +23,7 @@ const projects = [
     technologies: ['Python', 'TensorFlow', 'Flask', 'OpenCV'],
     github: 'https://github.com/username/vocal-eyes-ai',
     demo: 'https://vocal-eyes-ai.example.com',
-    image: '/placeholder.svg?height=400&width=600',
+    image: 'https://placeholder.pics/svg/300/DEDEDE/555555/Image%20here',
   },
   {
     title: 'EcoTrack',
@@ -30,7 +31,7 @@ const projects = [
     technologies: ['React Native', 'Firebase', 'Redux', 'D3.js'],
     github: 'https://github.com/username/ecotrack',
     demo: 'https://ecotrack.example.com',
-    image: '/placeholder.svg?height=400&width=600',
+    image: 'https://placeholder.pics/svg/300/DEDEDE/555555/Image%20here',
   },
   {
     title: 'DataViz Pro',
@@ -38,7 +39,7 @@ const projects = [
     technologies: ['D3.js', 'Vue.js', 'Express', 'PostgreSQL'],
     github: 'https://github.com/username/dataviz-pro',
     demo: 'https://dataviz-pro.example.com',
-    image: '/placeholder.svg?height=400&width=600',
+    image: 'https://placeholder.pics/svg/300/DEDEDE/555555/Image%20here',
   },
 ]
 
@@ -84,7 +85,7 @@ export default function Projects() {
                       <CardDescription className="text-lg">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
+                      <Image src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.technologies.map((tech) => (
                           <Badge key={tech} variant="secondary">{tech}</Badge>

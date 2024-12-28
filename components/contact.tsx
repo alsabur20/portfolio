@@ -42,7 +42,7 @@ export default function Contact() {
               transition={{ duration: 0.5 }}
               className="mt-4 p-4 bg-secondary text-foreground rounded-md text-center"
             >
-              Thank you for your message! I'll get back to you soon.
+              Thank you for your message! I&apos;ll get back to you soon.
             </motion.div>
           )}
         </div>

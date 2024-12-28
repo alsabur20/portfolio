@@ -15,12 +15,12 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/alsabur20/portfolio.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd your-repository
+   cd portfolio
    ```
 
 3. Install the dependencies:

@@ -10,10 +10,6 @@ This is a personal portfolio project where I share my work and skills.
 
 To explore this portfolio, simply browse through the project files and directories.
 
-## Projects
-
-[Your projects will be listed here]
-
 ## Contact
 
 Feel free to reach out if you have any questions or opportunities!

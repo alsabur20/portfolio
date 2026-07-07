@@ -16,4 +16,4 @@ Feel free to reach out if you have any questions or opportunities!
 
 ---
 
-*Last updated: July 2026*
+_Last updated: July 2026_

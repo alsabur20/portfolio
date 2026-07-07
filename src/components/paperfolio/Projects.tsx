@@ -16,7 +16,12 @@ type Project = {
   github?: string;
 };
 
-const variants: Array<Project["variant"]> = ["plain", "sticky", "index", "clipping"];
+const variants: Array<Project["variant"]> = [
+  "plain",
+  "sticky",
+  "index",
+  "clipping",
+];
 const rotates = [-2, 1.5, -1.5, 2, -1, 1];
 
 const raw: Array<Omit<Project, "variant" | "rotate">> = [
@@ -107,9 +112,16 @@ export function Projects() {
   const hiddenCount = projects.length - INITIAL;
 
   return (
-    <section id="projects" className="relative border-t border-ink/15 bg-paper-deep/40">
+    <section
+      id="projects"
+      className="relative border-t border-ink/15 bg-paper-deep/40"
+    >
       <div className="mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-32">
-        <SectionHeader index="03" kicker="Scrapbook" title="Selected work, taped in." />
+        <SectionHeader
+          index="03"
+          kicker="Scrapbook"
+          title="Selected work, taped in."
+        />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence initial={false}>
@@ -122,7 +134,11 @@ export function Projects() {
                 animate={{ opacity: 1, y: 0, rotate: p.rotate }}
                 exit={{ opacity: 0, y: 30, rotate: p.rotate * 2, scale: 0.95 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i >= INITIAL ? (i - INITIAL) * 0.06 : (i % 3) * 0.08 }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: i >= INITIAL ? (i - INITIAL) * 0.06 : (i % 3) * 0.08,
+                }}
                 whileHover={{ rotate: 0, y: -6, scale: 1.02 }}
                 className={`group relative flex flex-col border border-ink/25 p-5 ${
                   p.variant === "sticky"
@@ -200,7 +216,9 @@ export function Projects() {
             >
               <span className="absolute inset-0 origin-left scale-x-0 bg-ink transition-transform duration-500 group-hover:scale-x-100" />
               <span className="relative z-10 transition-colors duration-500 group-hover:text-paper">
-                {expanded ? "Fold pages back" : `Turn the page — ${hiddenCount} more`}
+                {expanded
+                  ? "Fold pages back"
+                  : `Turn the page — ${hiddenCount} more`}
               </span>
               <motion.span
                 animate={{ rotate: expanded ? 180 : 0 }}

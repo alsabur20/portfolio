@@ -26,7 +26,10 @@ export function BackToTop() {
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="group fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full border border-ink bg-paper px-4 py-3 font-mono text-[10px] uppercase tracking-[0.2em] text-ink shadow-[4px_4px_0_0_var(--color-ink)] transition-colors hover:bg-ink hover:text-paper"
         >
-          <ArrowUp size={14} className="transition-transform group-hover:-translate-y-0.5" />
+          <ArrowUp
+            size={14}
+            className="transition-transform group-hover:-translate-y-0.5"
+          />
           <span className="hidden sm:inline">Top</span>
         </motion.button>
       )}

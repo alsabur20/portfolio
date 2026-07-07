@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
-
 const links = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -33,7 +32,6 @@ export function Navbar() {
       window.removeEventListener("resize", update);
     };
   }, []);
-
 
   return (
     <motion.nav
@@ -96,7 +94,11 @@ export function Navbar() {
                     <motion.span
                       layoutId="nav-active"
                       className="pointer-events-none absolute -bottom-1 left-0 h-[2px] w-full bg-ink"
-                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 30,
+                      }}
                     />
                   )}
                 </a>
@@ -114,7 +116,6 @@ export function Navbar() {
           </a>
         </div>
       </div>
-
     </motion.nav>
   );
 }

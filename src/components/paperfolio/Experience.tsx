@@ -30,13 +30,23 @@ const items = [
 
 export function Experience() {
   return (
-    <section id="experience" className="relative border-t border-ink/15 bg-paper">
+    <section
+      id="experience"
+      className="relative border-t border-ink/15 bg-paper"
+    >
       <div className="mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-32">
-        <SectionHeader index="02" kicker="Field Notes" title="Where I've worked." />
+        <SectionHeader
+          index="02"
+          kicker="Field Notes"
+          title="Where I've worked."
+        />
 
         <div className="relative">
           {/* center line */}
-          <div className="absolute left-4 top-0 h-full w-px bg-ink/20 md:left-1/2" aria-hidden />
+          <div
+            className="absolute left-4 top-0 h-full w-px bg-ink/20 md:left-1/2"
+            aria-hidden
+          />
 
           <div className="flex flex-col gap-14">
             {items.map((item, i) => {
@@ -44,7 +54,11 @@ export function Experience() {
               return (
                 <motion.div
                   key={item.company}
-                  initial={{ opacity: 0, x: left ? -60 : 60, rotate: left ? -1.5 : 1.5 }}
+                  initial={{
+                    opacity: 0,
+                    x: left ? -60 : 60,
+                    rotate: left ? -1.5 : 1.5,
+                  }}
                   whileInView={{ opacity: 1, x: 0, rotate: left ? -1 : 1 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -54,7 +68,11 @@ export function Experience() {
                   <div className="ml-10 w-full md:ml-0 md:w-[46%]">
                     <motion.article
                       whileHover={{ rotate: 0, y: -4 }}
-                      transition={{ type: "spring", stiffness: 200, damping: 18 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 18,
+                      }}
                       className="border border-ink/25 bg-paper p-6"
                     >
                       <div className="mb-2 font-mono text-[10px] uppercase tracking-[0.24em] text-ink-soft">
@@ -63,7 +81,10 @@ export function Experience() {
                       <h3 className="font-display text-2xl font-bold text-ink">
                         {item.role}
                       </h3>
-                      <div className="mt-1 text-sm text-accent-brown">@ {item.company} · <span className="text-ink-soft">{item.location}</span></div>
+                      <div className="mt-1 text-sm text-accent-brown">
+                        @ {item.company} ·{" "}
+                        <span className="text-ink-soft">{item.location}</span>
+                      </div>
                       <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
                         {item.body}
                       </p>

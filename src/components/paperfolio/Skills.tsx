@@ -4,20 +4,54 @@ import { SectionHeader } from "./SectionHeader";
 type SkillGroup = { title: string; skills: string[] };
 
 const skillGroups: SkillGroup[] = [
-  { title: "Languages", skills: ["C++", "C#", "Python", "TypeScript / JavaScript", "HTML / CSS"] },
-  { title: "Frameworks & Platforms", skills: ["ASP.NET Core", "FastAPI", "Flask", "React / React Native", "Next.js", "Expo", "Bootstrap"] },
-  { title: "Databases", skills: ["MongoDB", "MS SQL", "PostgreSQL", "Entity Framework Core"] },
-  { title: "Tools & Tech", skills: ["Git", "Visual Studio", "VS Code", "Postman", "Pytesseract"] },
-  { title: "Practices", skills: ["Agile / Scrum", "RESTful APIs", "Unit Testing", "Debugging"] },
-  { title: "Soft Skills", skills: ["Problem-Solving", "Team Collaboration", "Communication", "Time Management"] },
+  {
+    title: "Languages",
+    skills: ["C++", "C#", "Python", "TypeScript / JavaScript", "HTML / CSS"],
+  },
+  {
+    title: "Frameworks & Platforms",
+    skills: [
+      "ASP.NET Core",
+      "FastAPI",
+      "Flask",
+      "React / React Native",
+      "Next.js",
+      "Expo",
+      "Bootstrap",
+    ],
+  },
+  {
+    title: "Databases",
+    skills: ["MongoDB", "MS SQL", "PostgreSQL", "Entity Framework Core"],
+  },
+  {
+    title: "Tools & Tech",
+    skills: ["Git", "Visual Studio", "VS Code", "Postman", "Pytesseract"],
+  },
+  {
+    title: "Practices",
+    skills: ["Agile / Scrum", "RESTful APIs", "Unit Testing", "Debugging"],
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      "Problem-Solving",
+      "Team Collaboration",
+      "Communication",
+      "Time Management",
+    ],
+  },
 ];
-
 
 export function Skills() {
   return (
     <section id="skills" className="relative border-t border-ink/15 bg-paper">
       <div className="mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-32">
-        <SectionHeader index="04" kicker="Glossary" title="Education & tools." />
+        <SectionHeader
+          index="04"
+          kicker="Glossary"
+          title="Education & tools."
+        />
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
           {/* Education */}
@@ -41,8 +75,8 @@ export function Skills() {
               </h3>
               <div className="mt-1 text-accent-brown">UET Lahore</div>
               <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-                Core CS, ML, systems, and a lot of late nights building side projects that
-                shaped this folio.
+                Core CS, ML, systems, and a lot of late nights building side
+                projects that shaped this folio.
               </p>
 
               <div className="mt-5 border-t border-ink/15 pt-4">
@@ -107,15 +141,25 @@ export function Skills() {
                     <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-ink-soft">
                       {String(gi + 1).padStart(2, "0")}
                     </span>
-                    <h4 className="font-display text-sm font-bold text-ink">{g.title}</h4>
+                    <h4 className="font-display text-sm font-bold text-ink">
+                      {g.title}
+                    </h4>
                     <span className="h-px flex-1 bg-ink/15" />
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {g.skills.map((s, i) => (
                       <motion.span
                         key={s}
-                        initial={{ opacity: 0, y: 10, rotate: i % 2 === 0 ? -2 : 2 }}
-                        whileInView={{ opacity: 1, y: 0, rotate: i % 2 === 0 ? -1 : 1 }}
+                        initial={{
+                          opacity: 0,
+                          y: 10,
+                          rotate: i % 2 === 0 ? -2 : 2,
+                        }}
+                        whileInView={{
+                          opacity: 1,
+                          y: 0,
+                          rotate: i % 2 === 0 ? -1 : 1,
+                        }}
                         viewport={{ once: true }}
                         transition={{ delay: i * 0.025, duration: 0.35 }}
                         whileHover={{ y: -3, rotate: 0, scale: 1.05 }}
@@ -128,7 +172,6 @@ export function Skills() {
                 </motion.div>
               ))}
             </div>
-
 
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: 3 }}

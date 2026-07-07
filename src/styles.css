@@ -103,8 +103,12 @@
     background-image:
       radial-gradient(oklch(0.18 0.01 60 / 0.035) 1px, transparent 1px),
       radial-gradient(oklch(0.18 0.01 60 / 0.025) 1px, transparent 1px);
-    background-size: 3px 3px, 7px 7px;
-    background-position: 0 0, 1px 1px;
+    background-size:
+      3px 3px,
+      7px 7px;
+    background-position:
+      0 0,
+      1px 1px;
   }
   ::selection {
     background: var(--color-ink);

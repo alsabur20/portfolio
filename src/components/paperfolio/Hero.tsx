@@ -2,7 +2,8 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
 import character from "@/assets/dev-character.png";
 
-const sentence = "A fresh Computer Science graduate who enjoys turning ideas into clean, functional web apps — curious, detail-driven, and always shipping something new across the stack.";
+const sentence =
+  "A fresh Computer Science graduate who enjoys turning ideas into clean, functional web apps — curious, detail-driven, and always shipping something new across the stack.";
 
 export function Hero() {
   const mx = useMotionValue(0);
@@ -67,7 +68,10 @@ export function Hero() {
                   className="text-ink"
                   variants={{
                     hidden: { pathLength: 0 },
-                    visible: { pathLength: 1, transition: { duration: 1.4, delay: 0.6 } },
+                    visible: {
+                      pathLength: 1,
+                      transition: { duration: 1.4, delay: 0.6 },
+                    },
                   }}
                 />
               </motion.svg>
@@ -123,7 +127,11 @@ export function Hero() {
                 height={900}
                 className="mx-auto w-full max-w-[320px] dark:invert dark:hue-rotate-180"
                 animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
               <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-ink-soft">
                 <span>Fig. 01</span>
@@ -139,7 +147,8 @@ export function Hero() {
               whileHover={{ rotate: 2, scale: 1.05 }}
               className="absolute -right-2 top-4 hidden w-32 border border-ink/15 bg-accent-note px-3 py-2 font-mono text-[10px] leading-snug text-ink md:block"
             >
-              currently ↴<br />open to opportunities
+              currently ↴<br />
+              open to opportunities
             </motion.div>
             <motion.div
               animate={{ rotate: [-4, -2, -4], y: [0, -4, 0] }}

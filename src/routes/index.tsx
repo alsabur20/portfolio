@@ -7,7 +7,6 @@ import { Skills } from "@/components/paperfolio/Skills";
 import { Contact, Footer } from "@/components/paperfolio/Contact";
 import { BackToTop } from "@/components/paperfolio/BackToTop";
 
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -25,7 +24,10 @@ export const Route = createFileRoute("/")({
       { name: "author", content: "Abdul Sabur" },
       { name: "robots", content: "index, follow" },
 
-      { property: "og:title", content: "Abdul Sabur — Full-Stack Software Engineer" },
+      {
+        property: "og:title",
+        content: "Abdul Sabur — Full-Stack Software Engineer",
+      },
       {
         property: "og:description",
         content:
@@ -36,7 +38,10 @@ export const Route = createFileRoute("/")({
       { property: "og:locale", content: "en_US" },
 
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Abdul Sabur — Full-Stack Software Engineer" },
+      {
+        name: "twitter:title",
+        content: "Abdul Sabur — Full-Stack Software Engineer",
+      },
       {
         name: "twitter:description",
         content:
@@ -60,6 +65,5 @@ function Index() {
       <Footer />
       <BackToTop />
     </div>
-
   );
 }

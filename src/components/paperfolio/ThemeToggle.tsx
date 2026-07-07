@@ -6,13 +6,13 @@ export function useTheme() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" && localStorage.getItem("paperfolio-theme")) as
-      | "light"
-      | "dark"
-      | null;
+    const stored = (typeof window !== "undefined" &&
+      localStorage.getItem("paperfolio-theme")) as "light" | "dark" | null;
     const initial: "light" | "dark" =
       stored ??
-      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);

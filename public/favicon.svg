@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g transform="rotate(-6 20 20)">
+    <rect x="3" y="3" width="34" height="34" rx="3" fill="#111111"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
+      font-family="Manrope, system-ui, sans-serif" font-weight="800"
+      font-size="18" letter-spacing="-0.04em" fill="#faf7f2">as</text>
+    <circle cx="32" cy="32" r="2" fill="#f5e6a3"/>
+  </g>
+</svg>

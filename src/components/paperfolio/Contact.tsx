@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative border-t border-ink/15 bg-paper-deep/40">
+    <section
+      id="contact"
+      className="relative border-t border-ink/15 bg-paper-deep/40"
+    >
       <div className="mx-auto max-w-6xl px-5 py-28 md:px-8 md:py-40">
         <div className="mb-4 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.24em] text-ink-soft">
           <span>05</span>
@@ -22,10 +25,22 @@ export function Contact() {
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {[
-            { label: "Email", value: "alsabur20@gmail.com", href: "mailto:alsabur20@gmail.com" },
+            {
+              label: "Email",
+              value: "alsabur20@gmail.com",
+              href: "mailto:alsabur20@gmail.com",
+            },
             { label: "Location", value: "Lahore, Pakistan" },
-            { label: "GitHub", value: "@alsabur20", href: "https://github.com/alsabur20" },
-            { label: "LinkedIn", value: "in/alsabur20", href: "https://linkedin.com/in/alsabur20" },
+            {
+              label: "GitHub",
+              value: "@alsabur20",
+              href: "https://github.com/alsabur20",
+            },
+            {
+              label: "LinkedIn",
+              value: "in/alsabur20",
+              href: "https://linkedin.com/in/alsabur20",
+            },
           ].map((c, i) => (
             <motion.a
               key={c.label}
@@ -58,7 +73,8 @@ export function Footer() {
   return (
     <footer className="border-t border-ink/25 bg-paper">
       <div className="mx-auto max-w-6xl px-5 py-8 text-center font-mono text-[10px] uppercase tracking-[0.24em] text-ink-soft md:px-8">
-        © {new Date().getFullYear()} Abdul Sabur — All rights, and wrongs, reserved.
+        © {new Date().getFullYear()} Abdul Sabur — All rights, and wrongs,
+        reserved.
       </div>
     </footer>
   );

@@ -97,7 +97,7 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <PaperButton primary href="/AbdulSaburResume.pdf" download>
+            <PaperButton primary href="/resume.pdf" download>
               Read CV
             </PaperButton>
             <PaperButton href="#projects">View Projects</PaperButton>

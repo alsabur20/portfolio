@@ -26,6 +26,39 @@ const rotates = [-2, 1.5, -1.5, 2, -1, 1];
 
 const raw: Array<Omit<Project, "variant" | "rotate">> = [
   {
+    title: "pybc-engine",
+    desc: "Production-ready, strictly type-safe Proof-of-Work blockchain engine published on PyPI with pluggable SQLite/Memory storage.",
+    tags: ["Python", "PyPI", "SQLite", "Cryptography"],
+    github: "https://github.com/alsabur20/pybc-engine",
+    live: "https://pypi.org/project/pybc-engine/",
+    badge: "Open Source",
+    type: "Personal",
+  },
+  {
+    title: "Blockchain-Ledger",
+    desc: "Decoupled peer-to-peer ledger to immutably record shared transactions, featuring Google OAuth 2.0 and strict CORS security.",
+    tags: ["React", "FastAPI", "PostgreSQL", "OAuth"],
+    github: "https://github.com/alsabur20/creds",
+    live: "https://blockchain-legder.vercel.app/",
+    type: "Personal",
+  },
+  {
+    title: "FaceTrail Pro",
+    desc: "Computer vision application utilizing DeepFace to autonomously cluster and track identities across large-batch photo datasets.",
+    tags: ["Python", "Streamlit", "DeepFace", "OpenCV"],
+    github: "https://github.com/alsabur20/facetrail-pro",
+    live: "https://facetrail-pro.streamlit.app/",
+    type: "Personal",
+  },
+  {
+    title: "MicroRAG",
+    desc: "Retrieval-Augmented Generation chatbot with an end-to-end semantic search pipeline for analyzing custom documents.",
+    tags: ["Python", "Streamlit", "LLMs", "RAG"],
+    github: "https://github.com/alsabur20/microrag",
+    live: "https://microrag.streamlit.app/",
+    type: "Personal",
+  },
+  {
     title: "PlateGuardian",
     desc: "Secure number plate recognition system with OCR, zero-trust principles, role-based access, and per-user OCR history.",
     tags: ["Python", "Flask", "React", "OpenCV", "RSA"],
